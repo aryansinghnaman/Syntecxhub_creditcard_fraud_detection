@@ -1,38 +1,41 @@
 # 💳 FraudVision AI
-### AI-Powered Credit Card Fraud Detection System
 
-FraudVision AI is an end-to-end Machine Learning project that detects fraudulent credit card transactions using a **Random Forest Classifier**. The project includes data preprocessing, handling class imbalance with **SMOTE**, model evaluation, and an interactive **Streamlit** dashboard for real-time and batch predictions.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-blueviolet?logo=plotly)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## 🚀 AI-Powered Credit Card Fraud Detection System
+
+**FraudVision AI** is an end-to-end Machine Learning application that detects fraudulent credit card transactions using a **Random Forest Classifier**. The project demonstrates the complete ML pipeline, including data preprocessing, feature scaling, handling class imbalance with **SMOTE**, model evaluation, and deployment through an interactive **Streamlit** dashboard.
 
 ---
 
-## 🚀 Features
+# ✨ Features
 
 - 📊 Interactive Streamlit Dashboard
-- 🤖 Credit Card Fraud Detection using Random Forest
-- ⚖️ SMOTE for handling imbalanced data
-- 📈 Model Performance Metrics
-  - Accuracy
-  - Precision
-  - Recall
-  - F1 Score
-  - ROC-AUC
-- 📉 Transaction Distribution Visualization
-- 🧩 Confusion Matrix Heatmap
+- 🤖 Random Forest Classifier
+- ⚖️ SMOTE for Imbalanced Dataset
+- 📈 Accuracy, Precision, Recall, F1-Score & ROC-AUC
+- 📉 Transaction Distribution Analysis
+- 🧩 Interactive Confusion Matrix Heatmap
 - ⭐ Top 10 Feature Importance
-- 📈 ROC Curve
+- 📈 ROC Curve Visualization
 - 🔍 Manual Transaction Prediction
 - 📂 Batch Prediction using CSV Upload
 - 📥 Download Prediction Results
+- 🎨 Modern Dashboard UI with Plotly Charts
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 Syntecxhub_Credit_Card_Fraud_Detection/
 │
 ├── dataset/
-│   └── creditcard.csv      # Download separately
+│   └── creditcard.csv        # Download separately
 │
 ├── images/
 │   ├── dashboard.png
@@ -45,45 +48,80 @@ Syntecxhub_Credit_Card_Fraud_Detection/
 ├── utils.py
 ├── style.css
 ├── requirements.txt
-├── README.md
 ├── scaler.pkl
+├── README.md
 └── .gitignore
 ```
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
 
-- Python
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-learn
-- Imbalanced-Learn (SMOTE)
-- Plotly
-- Joblib
-
----
-
-## 📊 Machine Learning Workflow
-
-1. Load Dataset
-2. Data Preprocessing
-3. Train-Test Split
-4. Feature Scaling
-5. Handle Class Imbalance using SMOTE
-6. Train Random Forest Classifier
-7. Evaluate Model Performance
-8. Save Trained Model
-9. Deploy using Streamlit
+| Category | Technologies |
+|----------|--------------|
+| Language | Python |
+| Machine Learning | Scikit-Learn |
+| Algorithm | Random Forest |
+| Data Processing | Pandas, NumPy |
+| Imbalanced Learning | SMOTE |
+| Visualization | Plotly |
+| Dashboard | Streamlit |
+| Model Storage | Joblib |
 
 ---
 
-## 📁 Dataset
+# 📊 Machine Learning Workflow
 
-The project uses the **Credit Card Fraud Detection Dataset** from Kaggle.
+```
+Credit Card Dataset
+        │
+        ▼
+Data Cleaning & Preprocessing
+        │
+        ▼
+Train-Test Split
+        │
+        ▼
+Feature Scaling
+        │
+        ▼
+SMOTE (Handle Class Imbalance)
+        │
+        ▼
+Random Forest Training
+        │
+        ▼
+Model Evaluation
+        │
+        ▼
+Save Model
+        │
+        ▼
+Streamlit Deployment
+```
 
-Download the dataset from:
+---
+
+# 📈 Model Evaluation
+
+The trained model is evaluated using multiple performance metrics:
+
+- ✅ Accuracy
+- ✅ Precision
+- ✅ Recall
+- ✅ F1 Score
+- ✅ ROC-AUC Score
+- ✅ Confusion Matrix
+- ✅ Feature Importance
+- ✅ ROC Curve
+
+---
+
+# 📁 Dataset
+
+This project uses the **Credit Card Fraud Detection Dataset** from Kaggle.
+
+📥 Download the dataset:
 
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
@@ -96,9 +134,9 @@ dataset/
 
 ---
 
-## 🤖 Generate the Model
+# 🤖 Generate the Trained Model
 
-The trained `model.pkl` file is not included because of GitHub file size limitations.
+The trained **model.pkl** file is not included because it exceeds GitHub's file size limit.
 
 Generate it locally by running:
 
@@ -106,40 +144,40 @@ Generate it locally by running:
 python train_model.py
 ```
 
-This will create:
+This automatically creates:
 
 - `model.pkl`
 - `scaler.pkl`
 
 ---
 
-## ▶️ Installation
+# ▶️ Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/aryansinghnaman/Syntecxhub_Credit_Card_Fraud_Detection.git
-```
-
-Move into the project folder:
+### Clone the repository
 
 ```bash
-cd Syntecxhub_Credit_Card_Fraud_Detection
+git clone https://github.com/aryansinghnaman/Syntecxhub_creditcard_fraud_detection.git
 ```
 
-Install the required packages:
+### Move into the project directory
+
+```bash
+cd Syntecxhub_creditcard_fraud_detection
+```
+
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the training script (only if `model.pkl` is missing):
+### Generate the trained model
 
 ```bash
 python train_model.py
 ```
 
-Launch the Streamlit application:
+### Launch the application
 
 ```bash
 streamlit run app.py
@@ -147,52 +185,89 @@ streamlit run app.py
 
 ---
 
-## 📸 Application Preview
+# 📸 Application Preview
 
-### 📊 Dashboard
+## 📊 Dashboard
 
 ![Dashboard](images/dashboard.png)
 
 ---
 
-### 📁 Dataset
+## 📁 Dataset Analysis
 
 ![Dataset](images/dataset.png)
 
 ---
 
-### 🔍 Prediction
+## 🔍 Manual Prediction
 
 ![Prediction](images/prediction.png)
 
 ---
 
-### 📂 Batch Prediction
+## 📂 Batch CSV Prediction
 
 ![Batch Prediction](images/batch_prediction.png)
 
 ---
 
-## 💡 Future Improvements
+# 💼 Real-World Workflow
 
-- XGBoost implementation
-- LightGBM comparison
-- Hyperparameter tuning
-- Explainable AI (SHAP/LIME)
-- Cloud deployment
-- REST API integration
+```
+User Input
+      │
+      ▼
+Feature Scaling
+      │
+      ▼
+Random Forest Model
+      │
+      ▼
+Fraud Probability
+      │
+      ▼
+Prediction
+      │
+      ▼
+Dashboard Visualization
+```
 
 ---
 
-## 👨‍💻 Developer
+# 💡 Future Improvements
 
-**Aryan Singh**
-
-Machine Learning Intern @ Syntecxhub
-
-- GitHub: https://github.com/aryansinghnaman
-- LinkedIn: https://linkedin.com/in/aryansingh9557
+- XGBoost Implementation
+- LightGBM Comparison
+- Hyperparameter Optimization
+- SHAP Explainability
+- REST API Integration
+- Docker Deployment
+- Cloud Deployment
+- Real-Time Fraud Detection API
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+# 👨‍💻 Developer
+
+## Aryan Singh
+
+**Machine Learning Intern @ Syntecxhub**
+
+### Connect with me
+
+- 🔗 GitHub: https://github.com/aryansinghnaman
+- 💼 LinkedIn: https://linkedin.com/in/aryansingh9557
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates future development.
+
+---
+
+## 📜 License
+
+This project is created for educational and portfolio purposes.
