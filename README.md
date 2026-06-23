@@ -149,17 +149,27 @@ streamlit run app.py
 
 ## 📸 Application Preview
 
-### Dashboard
-_Add `images/dashboard.png`_
+### 📊 Dashboard
 
-### Dataset
-_Add `images/dataset.png`_
+![Dashboard](images/dashboard.png)
 
-### Prediction
-_Add `images/prediction.png`_
+---
 
-### Batch Prediction
-_Add `images/batch_prediction.png`_
+### 📁 Dataset
+
+![Dataset](images/dataset.png)
+
+---
+
+### 🔍 Prediction
+
+![Prediction](images/prediction.png)
+
+---
+
+### 📂 Batch Prediction
+
+![Batch Prediction](images/batch_prediction.png)
 
 ---
 
